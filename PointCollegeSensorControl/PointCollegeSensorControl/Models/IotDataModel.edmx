@@ -5,6 +5,14 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="IoTDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Commands">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Command" Type="varchar" MaxLength="50" />
+          <Property Name="Executed" Type="bit" />
+        </EntityType>
         <EntityType Name="measurements">
           <Key>
             <PropertyRef Name="id" />
@@ -16,6 +24,7 @@
           <Property Name="value" Type="float" />
         </EntityType>
         <EntityContainer Name="IoTDBModelStoreContainer">
+          <EntitySet Name="Commands" EntityType="Self.Commands" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="measurements" EntityType="Self.measurements" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -24,6 +33,7 @@
       <Schema Namespace="IoTDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="IoTDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="measurements" EntityType="IoTDBModel.measurements" />
+          <EntitySet Name="Commands" EntityType="IoTDBModel.Commands" />
         </EntityContainer>
         <EntityType Name="measurements">
           <Key>
@@ -34,6 +44,14 @@
           <Property Name="time" Type="DateTime" Precision="3" />
           <Property Name="type" Type="Int32" />
           <Property Name="value" Type="Double" />
+        </EntityType>
+        <EntityType Name="Commands">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Command" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Executed" Type="Boolean" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -49,6 +67,15 @@
                 <ScalarProperty Name="time" ColumnName="time" />
                 <ScalarProperty Name="sender" ColumnName="sender" />
                 <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Commands">
+            <EntityTypeMapping TypeName="IoTDBModel.Commands">
+              <MappingFragment StoreEntitySet="Commands">
+                <ScalarProperty Name="Executed" ColumnName="Executed" />
+                <ScalarProperty Name="Command" ColumnName="Command" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

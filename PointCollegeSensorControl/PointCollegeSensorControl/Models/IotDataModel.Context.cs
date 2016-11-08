@@ -26,5 +26,6 @@ namespace PointCollegeSensorControl.Models
         }
     
         public virtual DbSet<measurements> measurements { get; set; }
+        public virtual DbSet<Commands> Commands { get; set; }
     }
 }
