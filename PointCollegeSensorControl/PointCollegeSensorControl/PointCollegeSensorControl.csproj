@@ -177,6 +177,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Commands.cs">
+      <DependentUpon>IotDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\IotDataModel.Context.cs">
       <AutoGen>True</AutoGen>

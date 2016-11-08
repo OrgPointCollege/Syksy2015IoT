@@ -133,6 +133,5 @@ D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\bin\Mi
 D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\bin\Microsoft.Owin.Security.Google.xml
 D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Debug\PointCollegeSensorControl.csprojResolveAssemblyReference.cache
 D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Debug\PointCollegeSensorControl.dll
 D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Debug\PointCollegeSensorControl.pdb
