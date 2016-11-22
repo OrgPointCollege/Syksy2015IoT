@@ -2,4 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/PointCollegeSensorControl/PointCollegeSensorControl/obj/Debug/PointCollegeSensorControl.csprojResolveAssemblyReference.cache
+/PointCollegeSensorControl/PointCollegeSensorControl/obj/
+/PointCollegeSensorControl/PointCollegeSensorControl/bin/
