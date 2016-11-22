@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Release\Package\PackageTmp" />
-  <setAcl path="C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <IisApp path="D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>

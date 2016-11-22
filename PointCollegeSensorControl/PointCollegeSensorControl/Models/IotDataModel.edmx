@@ -7,9 +7,10 @@
     <Schema Namespace="IoTDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Commands">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Command" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id_Command" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DeviceId" Type="int" Nullable="false" />
           <Property Name="Command" Type="varchar" MaxLength="50" />
           <Property Name="Executed" Type="bit" />
         </EntityType>
@@ -47,9 +48,10 @@
         </EntityType>
         <EntityType Name="Commands">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Command" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id_Command" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeviceId" Type="Int32" Nullable="false" />
           <Property Name="Command" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Executed" Type="Boolean" />
         </EntityType>
@@ -75,7 +77,8 @@
               <MappingFragment StoreEntitySet="Commands">
                 <ScalarProperty Name="Executed" ColumnName="Executed" />
                 <ScalarProperty Name="Command" ColumnName="Command" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+                <ScalarProperty Name="Id_Command" ColumnName="Id_Command" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

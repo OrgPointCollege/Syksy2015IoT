@@ -17,7 +17,8 @@
         <MappingFragment StoreEntitySet="Commands">
           <ScalarProperty Name="Executed" ColumnName="Executed" />
           <ScalarProperty Name="Command" ColumnName="Command" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+          <ScalarProperty Name="Id_Command" ColumnName="Id_Command" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
