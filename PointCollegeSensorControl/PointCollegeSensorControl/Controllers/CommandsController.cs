@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using PointCollegeSensorControl.Models;
 
-namespace PointCollegeSensorControl.Views
+namespace PointCollegeSensorControl.Controllers
 {
     public class CommandsController : Controller
     {
