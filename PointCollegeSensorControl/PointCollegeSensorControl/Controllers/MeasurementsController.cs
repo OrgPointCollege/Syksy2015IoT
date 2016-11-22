@@ -11,6 +11,7 @@ using System.Globalization;
 
 namespace PointCollegeSensorControl.Controllers
 {
+    //8.11.2016 Lisätty koodi, joka tallentaa tietokantaan:
     public class MeasurementsController : Controller
     {
         private IoTDBEntities db = new IoTDBEntities();
