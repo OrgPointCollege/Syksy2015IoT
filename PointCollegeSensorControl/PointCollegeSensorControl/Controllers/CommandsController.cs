@@ -20,6 +20,31 @@ namespace PointCollegeSensorControl.Controllers
             return View(db.Commands.ToList());
         }
 
+        public string GetCommand(int id)
+        {
+            string command = (from c in db.Commands
+                              where (c.DeviceId == id) && (c.Executed == false)
+                              select c.Command).FirstOrDefault();
+            if (command == null)
+                command = "";
+            return command;
+        }
+
+        public string Completed(int id)
+        {
+            Commands command = (from c in db.Commands
+                              where (c.DeviceId == id) && (c.Executed == false)
+                              select c).FirstOrDefault();
+            if (command != null)
+            {
+                command.Executed = true;
+                db.SaveChanges();
+            }
+            return "Ok";
+        }
+
+
+
         // GET: Commands/Details/5
         public ActionResult Details(int? id)
         {
@@ -46,11 +71,12 @@ namespace PointCollegeSensorControl.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Command,Executed")] Commands commands)
+        public ActionResult Create([Bind(Include = "Id_Command,DeviceId,Command")] Commands commands)
         {
             if (ModelState.IsValid)
             {
                 db.Commands.Add(commands);
+                commands.Executed = false;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -78,7 +104,7 @@ namespace PointCollegeSensorControl.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Command,Executed")] Commands commands)
+        public ActionResult Edit([Bind(Include = "Id_Command,DeviceId,Command,Executed")] Commands commands)
         {
             if (ModelState.IsValid)
             {

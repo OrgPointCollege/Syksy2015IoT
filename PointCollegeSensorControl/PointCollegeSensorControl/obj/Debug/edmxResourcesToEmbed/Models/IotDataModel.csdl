@@ -16,9 +16,10 @@
   </EntityType>
   <EntityType Name="Commands">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="Id_Command" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Id_Command" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DeviceId" Type="Int32" Nullable="false" />
     <Property Name="Command" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Executed" Type="Boolean" />
   </EntityType>
