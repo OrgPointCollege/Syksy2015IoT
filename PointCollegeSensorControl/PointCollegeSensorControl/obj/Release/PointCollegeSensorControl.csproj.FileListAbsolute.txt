@@ -64,7 +64,6 @@ C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\P
 C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Release\PointCollegeSensorControl.csprojResolveAssemblyReference.cache
 C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Release\PointCollegeSensorControl.dll
 C:\Users\Juho Tulonen.Juho\Source\Repos\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\obj\Release\PointCollegeSensorControl.pdb
 D:\Codes\Syksy2015IoT\PointCollegeSensorControl\PointCollegeSensorControl\bin\roslyn\csc.exe
