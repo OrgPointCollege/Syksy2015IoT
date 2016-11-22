@@ -12,5 +12,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Commands">
+      <EntityTypeMapping TypeName="IoTDBModel.Commands">
+        <MappingFragment StoreEntitySet="Commands">
+          <ScalarProperty Name="Executed" ColumnName="Executed" />
+          <ScalarProperty Name="Command" ColumnName="Command" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

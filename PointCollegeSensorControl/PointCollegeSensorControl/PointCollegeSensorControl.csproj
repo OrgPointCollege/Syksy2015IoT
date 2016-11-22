@@ -177,6 +177,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Commands.cs">
+      <DependentUpon>IotDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\IotDataModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -199,6 +202,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Controllers\CommandsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -278,6 +282,11 @@
     <Content Include="Views\Measurements\Details.cshtml" />
     <Content Include="Views\Measurements\Edit.cshtml" />
     <Content Include="Views\Measurements\Index.cshtml" />
+    <Content Include="Views\Commands\Create.cshtml" />
+    <Content Include="Views\Commands\Delete.cshtml" />
+    <Content Include="Views\Commands\Details.cshtml" />
+    <Content Include="Views\Commands\Edit.cshtml" />
+    <Content Include="Views\Commands\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
