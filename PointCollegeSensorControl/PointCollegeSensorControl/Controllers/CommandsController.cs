@@ -46,7 +46,7 @@ namespace PointCollegeSensorControl.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Command,Executed")] Commands commands)
+        public ActionResult Create([Bind(Include = "Id_Command,DeviceId,Command,Executed")] Commands commands)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace PointCollegeSensorControl.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Command,Executed")] Commands commands)
+        public ActionResult Edit([Bind(Include = "Id_Command,DeviceId,Command,Executed")] Commands commands)
         {
             if (ModelState.IsValid)
             {

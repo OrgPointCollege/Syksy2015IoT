@@ -14,7 +14,8 @@ namespace PointCollegeSensorControl.Models
     
     public partial class Commands
     {
-        public int Id { get; set; }
+        public int Id_Command { get; set; }
+        public int DeviceId { get; set; }
         public string Command { get; set; }
         public Nullable<bool> Executed { get; set; }
     }
