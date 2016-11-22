@@ -32,7 +32,10 @@ namespace PointCollegeSensorControl.Controllers
         // GET: Measurements
         public ActionResult Index()
         {
-            return View(db.measurements.ToList());
+            var mittaukset = (from m in db.measurements
+                              orderby m.time descending
+                              select m).Take(500).ToList();
+            return View(mittaukset);
         }
 
         // GET: Measurements/Details/5
