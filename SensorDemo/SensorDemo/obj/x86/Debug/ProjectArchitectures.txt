@@ -1,0 +1,1 @@
+C:\Users\oppiadmin\Source\Repos\Syksy2015IoT\SensorDemo\SensorDemo\SensorDemo.csproj;x86
