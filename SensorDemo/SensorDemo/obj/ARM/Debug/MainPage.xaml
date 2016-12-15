@@ -10,11 +10,12 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Button x:ConnectionId='1' x:Name="button" Content="Say Hello" HorizontalAlignment="Left" Margin="80,95,0,0" VerticalAlignment="Top" Height="45" Width="180"                     />
-        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="80,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="400"/>
+        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="80,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="300" Width="400"/>
 
-        <Button x:ConnectionId='3' Width="150" Height="30" Margin="80,250,0,0" Content="Diskovalot"                    ></Button>
-        <Button x:ConnectionId='4' Width="150" Height="30" Margin="80,330,0,0" Content="Teksti"                     ></Button>
-        
-   </Grid>
+        <Button x:ConnectionId='3' Width="150" Height="30" Margin="280,50,0,0" Content="Diskovalot"                    ></Button>
+        <Button x:ConnectionId='4' Width="150" Height="30" Margin="280,130,0,0" Content="Teksti"                     ></Button>
+        <Button x:ConnectionId='5' Width="150" Height="30" Margin="280,200,0,0" Content="Sensorit"                       ></Button>
+
+    </Grid>
 </Page>
 

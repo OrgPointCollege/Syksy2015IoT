@@ -102,6 +102,7 @@
     <Compile Include="Demos\GravityBlob.cs" />
     <Compile Include="Demos\JoystickPixel.cs" />
     <Compile Include="Demos\MultiColorScrollText.cs" />
+    <Compile Include="Demos\ReadAllSensors.cs" />
     <Compile Include="Demos\SingleColorScrollText.cs" />
     <Compile Include="Demos\SpriteAnimation.cs" />
     <Compile Include="Demos\WriteTemperature.cs" />

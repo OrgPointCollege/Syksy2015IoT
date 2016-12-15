@@ -49,6 +49,12 @@ namespace SensorDemo
                 "Moikka Porvoo!"));
         }
 
+        private void sensorit_Click(object sender, RoutedEventArgs e)
+        {
+            RPi.SenseHat.Demo.DemoRunner.Run(s => new
+                RPi.SenseHat.Demo.Demos.ReadAllSensors(s, this, SetScreenText));
+        }
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             textBlock.Text = "Hei, Raspberry!";
