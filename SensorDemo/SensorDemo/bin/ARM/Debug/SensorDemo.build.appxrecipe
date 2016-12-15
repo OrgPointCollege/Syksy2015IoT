@@ -370,8 +370,8 @@
     <AppxPackagedFile Include="C:\Users\oppiadmin\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\oppiadmin\Source\Repos\Syksy2015IoT\SensorDemo\SensorDemo\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\oppiadmin\Source\Repos\Syksy2015IoT\SensorDemo\SensorDemo\Assets\ColorFont.png">
+      <PackagePath>Assets\ColorFont.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\oppiadmin\Source\Repos\Syksy2015IoT\SensorDemo\SensorDemo\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -399,6 +399,9 @@
     <AppxPackagedFile Include="C:\Users\oppiadmin\Source\Repos\Syksy2015IoT\SensorDemo\SensorDemo\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\oppiadmin\Source\Repos\Syksy2015IoT\SensorDemo\SensorDemo\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\oppiadmin\Source\Repos\Syksy2015IoT\SensorDemo\SensorDemo\bin\ARM\Debug\SensorDemo.xr.xml">
       <PackagePath>SensorDemo.xr.xml</PackagePath>

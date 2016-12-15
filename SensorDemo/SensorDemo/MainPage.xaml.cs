@@ -36,6 +36,18 @@ namespace SensorDemo
             });
         }
 
+        private void valot_Click(object sender, RoutedEventArgs e)
+        {
+            RPi.SenseHat.Demo.DemoRunner.Run(s => new
+                RPi.SenseHat.Demo.Demos.DiscoLights(s, this));
+        }
+
+        private void teksti_Click(object sender, RoutedEventArgs e)
+        {
+            RPi.SenseHat.Demo.DemoRunner.Run(s => new
+                RPi.SenseHat.Demo.Demos.MultiColorScrollText(s, this,
+                "Moikka Porvoo!"));
+        }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
