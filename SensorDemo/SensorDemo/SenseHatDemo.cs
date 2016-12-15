@@ -24,6 +24,7 @@
 using System;
 using System.Threading;
 using Emmellsoft.IoT.Rpi.SenseHat;
+using SensorDemo;
 
 namespace RPi.SenseHat.Demo
 {
